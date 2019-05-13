@@ -1,0 +1,8 @@
+Copyright (C) 2018 Michał Šrajer <michal@post.pl>
+This software is licensed under (one of your choice):
+- MIT
+- Apache-2.0
+- LGPL-2.1
+
+See LICENSE-*.txt for details.
+
