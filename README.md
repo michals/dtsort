@@ -78,5 +78,12 @@ Thee are cases when compare or swaps are very expensive. In such cases some twea
 
 ## To-do
 
-a lot... :-)
+* integrate with `std::sort()`
+* integrate with parallel `std::sort()` and `std::stable_sort()`
+* better integration with `std::stable_sort()`
+* better benchmarks
+* try few more tweaks
+* polish and publish dt-sort generating code
+* generage dt-sort for other languages
+* TBD
 
