@@ -1,4 +1,5 @@
 theme: minima
+markdown: kramdown
 title: dtsort
 description: decision tree optimal sorting
 show_downloads: false
