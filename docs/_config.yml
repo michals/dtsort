@@ -1,4 +1,4 @@
-theme: minima
+theme: jekyll-theme-modernist
 markdown: kramdown
 title: dtsort
 description: decision tree optimal sorting
