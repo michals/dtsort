@@ -1,0 +1,9 @@
+--- bench-dt_stable_sort-stock ---
+dt_stable_sort_stock: ALL PASS
+
+--- bench-dt_stable_sort-dtsort-em ---
+dt_stable_sort_dtsort-em: ALL PASS
+
+--- bench-dt_stable_sort-dtsort-am ---
+dt_stable_sort_dtsort-am: ALL PASS
+

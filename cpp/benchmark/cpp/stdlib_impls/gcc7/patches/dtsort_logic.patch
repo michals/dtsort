@@ -1,0 +1,57 @@
+--- generated/stl_algo.h	2026-04-29 22:02:09.248420526 +0200
++++ generated/stl_algo.h	2026-04-29 22:02:09.248685676 +0200
+@@ -1884,12 +1884,12 @@
+     {
+       if (__last - __first > int(_S_threshold))
+ 	{
+-	  target_std::__insertion_sort(__first, __first + int(_S_threshold), __comp);
++	  target_std::__insertion_sort_stock(__first, __first + int(_S_threshold), __comp);
+ 	  target_std::__unguarded_insertion_sort(__first + int(_S_threshold), __last,
+ 					  __comp);
+ 	}
+       else
+-	target_std::__insertion_sort(__first, __last, __comp);
++	dtsort_dispatch_entry(__first, __last, __comp);
+     }
+ 
+   /// This is a helper function...
+@@ -1997,7 +1997,7 @@
+ 	  else
+ 	    __last = __cut;
+ 	}
+-      target_std::__insertion_sort(__first, __last, __comp);
++      dtsort_dispatch_entry(__first, __last, __comp);
+     }
+ 
+   // nth_element
+@@ -2694,10 +2694,10 @@
+     {
+       while (__last - __first >= __chunk_size)
+ 	{
+-	  target_std::__insertion_sort(__first, __first + __chunk_size, __comp);
++	  dtsort_dispatch_entry(__first, __first + __chunk_size, __comp);
+ 	  __first += __chunk_size;
+ 	}
+-      target_std::__insertion_sort(__first, __last, __comp);
++      dtsort_dispatch_entry(__first, __last, __comp);
+     }
+ 
+   enum { _S_chunk_size = 7 };
+@@ -2765,7 +2765,7 @@
+     {
+       if (__last - __first < 15)
+ 	{
+-	  target_std::__insertion_sort(__first, __last, __comp);
++	  dtsort_dispatch_entry(__first, __last, __comp);
+ 	  return;
+ 	}
+       _RandomAccessIterator __middle = __first + (__last - __first) / 2;
+@@ -5001,7 +5001,7 @@
+       typedef typename iterator_traits<_RandomAccessIterator>::difference_type
+ 	_DistanceType;
+ 
+-      typedef _Temporary_buffer<_RandomAccessIterator, _ValueType> _TmpBuf;
++      if (__last - __first <= MAX_DT_SIZE) { dtsort_dispatch_entry(__first, __last, __comp); return; } typedef _Temporary_buffer<_RandomAccessIterator, _ValueType> _TmpBuf;
+       _TmpBuf __buf(__first, __last);
+ 
+       if (__buf.begin() == 0)

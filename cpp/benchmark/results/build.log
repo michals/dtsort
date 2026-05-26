@@ -1,0 +1,714 @@
+
+--- [RUN] cmake -B build at 2026-05-27 00:56:48 ---
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/michal/code/dtsort-codegen/build
+
+--- [EXIT SUCCESS] elapsed: 0.08s ---
+
+--- [RUN] cmake --build build --target clean-generated at 2026-05-27 00:56:48 ---
+[100%] Removing all generated headers and metrics
+[100%] Built target clean-generated
+
+--- [EXIT SUCCESS] elapsed: 0.05s ---
+
+--- [RUN] cmake --build build --target generate at 2026-05-27 00:56:48 ---
+[ 22%] Built target dtsort-verify-am
+[ 44%] Built target dtsort-codegen
+[ 66%] Built target dtsort-verify
+[ 88%] Built target dtsort-verify-em
+[100%] Generating all dtsort headers and theoretical metrics in output/
+
+Generating dtsort2_full (mode=full) for N=2...
+Initializing Solutions... Building Solutions for N=2...
+Adding all permutations...
+Adding all permutations... Added 2
+Counting all variations...
+Counting all variations... Processed 4
+Building Solutions counts...
+Building Solutions DONE
+ Done. (2 perms)
+  Building Decision Tree (Full, candidates=2)... Done.
+  Saving tree to output/dtsort2_full.dt...
+  [Stats]
+    Comparisons: [1..1] (avg 1)
+    Nodes:       3 (leaves 2)
+    Optimality:  YES (Theory: 1 @ OEIS A036604)
+    Path Length: 1 (min) / 1 (max)
+    Sorted path:   1
+    Reverse path:  1
+  Generating C++ code to output/dtsort2_full.hh...
+  Done.
+
+Generating dtsort3_full (mode=full) for N=3...
+Initializing Solutions... Building Solutions for N=3...
+Adding all permutations...
+Adding all permutations... Added 6
+Counting all variations...
+Counting all variations... Processed 27
+Building Solutions counts...
+Building Solutions DONE
+ Done. (6 perms)
+  Building Decision Tree (Full, candidates=6)... Done.
+  Saving tree to output/dtsort3_full.dt...
+  [Stats]
+    Comparisons: [2..3] (avg 2.66667)
+    Nodes:       11 (leaves 6)
+    Optimality:  YES (Theory: 3 @ OEIS A036604)
+    Path Length: 2 (min) / 3 (max)
+    Sorted path:   3
+    Reverse path:  3
+  Generating C++ code to output/dtsort3_full.hh...
+  Done.
+
+Generating dtsort4_full (mode=full) for N=4...
+Initializing Solutions... Building Solutions for N=4...
+Adding all permutations...
+Adding all permutations... Added 24
+Counting all variations...
+Counting all variations... Processed 256
+Building Solutions counts...
+Building Solutions DONE
+ Done. (24 perms)
+  Building Decision Tree (Full, candidates=24)... Done.
+  Saving tree to output/dtsort4_full.dt...
+  [Stats]
+    Comparisons: [4..5] (avg 4.66667)
+    Nodes:       47 (leaves 24)
+    Optimality:  YES (Theory: 5 @ OEIS A036604)
+    Path Length: 4 (min) / 5 (max)
+    Sorted path:   4
+    Reverse path:  4
+  Generating C++ code to output/dtsort4_full.hh...
+  Done.
+
+Generating dtsort5_full (mode=full) for N=5...
+Initializing Solutions... Building Solutions for N=5...
+Adding all permutations...
+Adding all permutations... Added 120
+Counting all variations...
+Counting all variations... Processed 3125
+Building Solutions counts...
+Building Solutions DONE
+ Done. (120 perms)
+  Building Decision Tree (Full, candidates=120)... Done.
+  Saving tree to output/dtsort5_full.dt...
+  [Stats]
+    Comparisons: [6..7] (avg 6.93333)
+    Nodes:       239 (leaves 120)
+    Optimality:  YES (Theory: 7 @ OEIS A036604)
+    Path Length: 6 (min) / 7 (max)
+    Sorted path:   7
+    Reverse path:  7
+  Generating C++ code to output/dtsort5_full.hh...
+  Done.
+
+Generating dtsort6_gs42 (mode=gs42) for N=6...
+Initializing Solutions... Building Solutions for N=6...
+Adding all permutations...
+Adding all permutations... Added 720
+Counting all variations...
+Counting all variations... Processed 46656
+Building Solutions counts...
+Building Solutions DONE
+ Done. (720 perms)
+  Building Decision Tree (Group-Sorted gs42, candidates=15)... Done.
+  Saving tree to output/dtsort6_gs42.dt...
+  [Stats]
+    Comparisons: [3..5] (avg 4)
+    Nodes:       29 (leaves 15)
+    Optimality:  NO (Theory: 10 @ OEIS A036604)
+    Path Length: 3 (min) / 5 (max)
+    Sorted path:   3
+    Reverse path:  4
+  Generating C++ code to output/dtsort6_gs42.hh...
+  Done.
+
+Generating dtsort7_gs52 (mode=gs52) for N=7...
+Initializing Solutions... Building Solutions for N=7...
+Adding all permutations...
+Adding all permutations... Added 5040
+Counting all variations...
+Counting all variations... Processed 823543
+Building Solutions counts...
+Building Solutions DONE
+ Done. (5040 perms)
+  Building Decision Tree (Group-Sorted gs52, candidates=21)... Done.
+  Saving tree to output/dtsort7_gs52.dt...
+  [Stats]
+    Comparisons: [4..5] (avg 4.47619)
+    Nodes:       41 (leaves 21)
+    Optimality:  NO (Theory: 13 @ OEIS A036604)
+    Path Length: 4 (min) / 5 (max)
+    Sorted path:   4
+    Reverse path:  4
+  Generating C++ code to output/dtsort7_gs52.hh...
+  Done.
+
+Generating dtsort8_gs53 (mode=gs53) for N=8...
+Initializing Solutions... Building Solutions for N=8...
+Adding all permutations...
+Adding all permutations... Added 40320
+Counting all variations...
+Counting all variations... Processed 16777216
+Building Solutions counts...
+Building Solutions DONE
+ Done. (40320 perms)
+  Building Decision Tree (Group-Sorted gs53, candidates=56)... Done.
+  Saving tree to output/dtsort8_gs53.dt...
+  [Stats]
+    Comparisons: [5..7] (avg 5.89286)
+    Nodes:       111 (leaves 56)
+    Optimality:  NO (Theory: 16 @ OEIS A036604)
+    Path Length: 5 (min) / 7 (max)
+    Sorted path:   6
+    Reverse path:  5
+  Generating C++ code to output/dtsort8_gs53.hh...
+  Done.
+
+Generating dtsort9_gs54 (mode=gs54) for N=9...
+Initializing Solutions... Building Solutions for N=9...
+Adding all permutations...
+Adding all permutations... Added 362880
+Skipping variation counting for N=9 (N^N too large)
+Building Solutions DONE
+ Done. (362880 perms)
+  Building Decision Tree (Group-Sorted gs54, candidates=126)... Done.
+  Saving tree to output/dtsort9_gs54.dt...
+  [Stats]
+    Comparisons: [6..8] (avg 7.07937)
+    Nodes:       251 (leaves 126)
+    Optimality:  NO (Theory: 19 @ OEIS A036604)
+    Path Length: 6 (min) / 8 (max)
+    Sorted path:   7
+    Reverse path:  6
+  Generating C++ code to output/dtsort9_gs54.hh...
+  Done.
+
+Generating dtsort10_gs55 (mode=gs55) for N=10...
+Initializing Solutions... Building Solutions for N=10...
+Adding all permutations...
+Adding all permutations... Added 3628800
+Skipping variation counting for N=10 (N^N too large)
+Building Solutions DONE
+ Done. (3628800 perms)
+  Building Decision Tree (Group-Sorted gs55, candidates=252)... Done.
+  Saving tree to output/dtsort10_gs55.dt...
+  [Stats]
+    Comparisons: [7..9] (avg 8.07937)
+    Nodes:       503 (leaves 252)
+    Optimality:  NO (Theory: 22 @ OEIS A036604)
+    Path Length: 7 (min) / 9 (max)
+    Sorted path:   7
+    Reverse path:  7
+  Generating C++ code to output/dtsort10_gs55.hh...
+  Done.
+[100%] Built target generate
+
+--- [EXIT SUCCESS] elapsed: 12.48s ---
+
+--- [RUN] /Users/michal/code/dtsort-codegen/build/dtsort-verify-am --csv output/pure-gs.csv --mode gs -n 10 at 2026-05-27 00:57:00 ---
+ Building Solutions for N=2...
+Adding all permutations...
+Adding all permutations... Added 2
+Counting all variations...
+Counting all variations... Processed 4
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=3...
+Adding all permutations...
+Adding all permutations... Added 6
+Counting all variations...
+Counting all variations... Processed 27
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=4...
+Adding all permutations...
+Adding all permutations... Added 24
+Counting all variations...
+Counting all variations... Processed 256
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=5...
+Adding all permutations...
+Adding all permutations... Added 120
+Counting all variations...
+Counting all variations... Processed 3125
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=6...
+Adding all permutations...
+Adding all permutations... Added 720
+Counting all variations...
+Counting all variations... Processed 46656
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=7...
+Adding all permutations...
+Adding all permutations... Added 5040
+Counting all variations...
+Counting all variations... Processed 823543
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=8...
+Adding all permutations...
+Adding all permutations... Added 40320
+Counting all variations...
+Counting all variations... Processed 16777216
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=9...
+Adding all permutations...
+Adding all permutations... Added 362880
+Skipping variation counting for N=9 (N^N too large)
+Building Solutions DONE
+ Building Solutions for N=10...
+Adding all permutations...
+Adding all permutations... Added 3628800
+Skipping variation counting for N=10 (N^N too large)
+Building Solutions DONE
+
+--- [EXIT SUCCESS] elapsed: 16.58s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 00:57:17 ---
+Applying dtsort logic patch...
+patching file 'generated/stl_algo.h'
+GCC7 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.07s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 00:57:17 ---
+GCC 7 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 00:57:17 ---
+Applying dtsort logic patch...
+patching file 'generated/stl_algo.h'
+GCC14 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.07s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 00:57:17 ---
+GCC 14 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 00:57:17 ---
+Applying dtsort logic patch...
+patching file 'generated/stl_algo.h'
+GCC16 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 00:57:17 ---
+GCC 16 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 00:57:17 ---
+Copying original LLVM 15 headers to unique names...
+Applying dtsort logic patch...
+patching file 'generated/llvm15_stable_sort.h'
+patching file 'generated/llvm15_algorithm/stable_sort.h'
+patching file 'generated/llvm15_algorithm/sort.h'
+LLVM15 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.86s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 00:57:18 ---
+Copying original LLVM 15 headers to unique names...
+LLVM 15 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.86s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 00:57:19 ---
+Copying original LLVM 19 headers to unique names...
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__debug_utils/*: No such file or directory
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__bit/*: No such file or directory
+Applying dtsort logic patch...
+patching file 'generated/llvm19_algorithm/stable_sort.h'
+patching file 'generated/llvm19_algorithm/sort.h'
+LLVM19 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 2.90s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 00:57:22 ---
+Copying original LLVM 19 headers to unique names...
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__debug_utils/*: No such file or directory
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__bit/*: No such file or directory
+LLVM 19 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 2.88s ---
+
+--- [RUN] cmake -DDTSORT_MAX_N=10 -DDT_MODE_GS=ON .. at 2026-05-27 00:57:25 ---
+-- The CXX compiler identification is AppleClang 21.0.0.21000099
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /opt/homebrew/bin/git (found version "2.49.0")
+-- git version: v1.8.3 normalized to 1.8.3
+-- Google Benchmark version: 1.8.3
+-- Looking for shm_open in rt
+-- Looking for shm_open in rt - not found
+-- Performing Test HAVE_CXX_FLAG_WALL
+-- Performing Test HAVE_CXX_FLAG_WALL - Success
+-- Performing Test HAVE_CXX_FLAG_WEXTRA
+-- Performing Test HAVE_CXX_FLAG_WEXTRA - Success
+-- Performing Test HAVE_CXX_FLAG_WSHADOW
+-- Performing Test HAVE_CXX_FLAG_WSHADOW - Success
+-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL
+-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL - Success
+-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST
+-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST - Success
+-- Performing Test HAVE_CXX_FLAG_WERROR
+-- Performing Test HAVE_CXX_FLAG_WERROR - Success
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS - Success
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 - Success
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED - Success
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WD654
+-- Performing Test HAVE_CXX_FLAG_WD654 - Failed
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY - Success
+-- Enabling additional flags: -DINCLUDE_DIRECTORIES=/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/build/_deps/googlebenchmark-src/include
+-- Compiling and running to test HAVE_THREAD_SAFETY_ATTRIBUTES
+-- Performing Test HAVE_THREAD_SAFETY_ATTRIBUTES -- success
+-- Performing Test HAVE_CXX_FLAG_COVERAGE
+-- Performing Test HAVE_CXX_FLAG_COVERAGE - Success
+-- Compiling and running to test HAVE_STD_REGEX
+-- Performing Test HAVE_STD_REGEX -- success
+-- Compiling and running to test HAVE_GNU_POSIX_REGEX
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Compiling and running to test HAVE_POSIX_REGEX
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Compiling and running to test HAVE_STEADY_CLOCK
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Compiling and running to test HAVE_PTHREAD_AFFINITY
+-- Performing Test HAVE_PTHREAD_AFFINITY -- failed to compile
+-- Configuring done (5.6s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    DT_MODE_GS
+
+
+-- Build files have been written to: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/build
+
+--- [EXIT SUCCESS] elapsed: 5.59s ---
+
+--- [RUN COMPILATION] make -j4 bench-dt_stable_sort-stock bench-dt_stable_sort-dtsort-em bench-dt_stable_sort-dtsort-am dt_size_2_obj dt_size_3_obj dt_size_4_obj dt_size_5_obj dt_size_6_obj dt_size_7_obj dt_size_8_obj dt_size_9_obj dt_size_10_obj ---
+[ 18%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.o
+[ 18%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_name.cc.o
+[ 18%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_register.cc.o
+[ 18%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o
+[ 22%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.o
+[ 27%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/check.cc.o
+[ 31%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/colorprint.cc.o
+[ 36%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/commandlineflags.cc.o
+[ 40%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/complexity.cc.o
+[ 45%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/console_reporter.cc.o
+[ 50%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/counter.cc.o
+[ 54%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/csv_reporter.cc.o
+[ 59%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/json_reporter.cc.o
+[ 63%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/perf_counters.cc.o
+[ 68%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.o
+[ 72%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.o
+[ 77%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/string_util.cc.o
+[ 81%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/sysinfo.cc.o
+[ 86%] Building CXX object _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/timers.cc.o
+[ 90%] Linking CXX static library libbenchmark.a
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-dt_stable_sort-stock.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:54:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:55:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:56:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:57:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:59:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:60:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:61:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:62:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+20 warnings generated.
+[100%] Linking CXX executable bench-dt_stable_sort-stock
+[100%] Built target bench-dt_stable_sort-stock
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-dt_stable_sort-dtsort-em.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:54:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort2_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:55:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort3_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:56:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort4_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:57:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort5_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort6_gs42.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:59:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort7_gs52.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:60:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort8_gs53.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:61:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort9_gs54.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:62:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort10_gs55.hh:43:89: warning: unused parameter 'last' [-Wunused-parameter]
+   43 | inline void dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+20 warnings generated.
+[100%] Linking CXX executable bench-dt_stable_sort-dtsort-em
+[100%] Built target bench-dt_stable_sort-dtsort-em
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-dt_stable_sort-dtsort-am.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:54:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:55:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:56:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:57:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:59:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:60:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:61:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../include/dt_stable_sort.hh:62:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../../output/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+20 warnings generated.
+[100%] Linking CXX executable bench-dt_stable_sort-dtsort-am
+[100%] Built target bench-dt_stable_sort-dtsort-am
+[100%] Building CXX object CMakeFiles/dt_size_2_obj.dir/dt_size_2.cc.o
+[100%] Built target dt_size_2_obj
+[100%] Building CXX object CMakeFiles/dt_size_3_obj.dir/dt_size_3.cc.o
+[100%] Built target dt_size_3_obj
+[100%] Building CXX object CMakeFiles/dt_size_4_obj.dir/dt_size_4.cc.o
+[100%] Built target dt_size_4_obj
+[100%] Building CXX object CMakeFiles/dt_size_5_obj.dir/dt_size_5.cc.o
+[100%] Built target dt_size_5_obj
+[100%] Building CXX object CMakeFiles/dt_size_6_obj.dir/dt_size_6.cc.o
+[100%] Built target dt_size_6_obj
+[100%] Building CXX object CMakeFiles/dt_size_7_obj.dir/dt_size_7.cc.o
+[100%] Built target dt_size_7_obj
+[100%] Building CXX object CMakeFiles/dt_size_8_obj.dir/dt_size_8.cc.o
+[100%] Built target dt_size_8_obj
+[100%] Building CXX object CMakeFiles/dt_size_9_obj.dir/dt_size_9.cc.o
+[100%] Built target dt_size_9_obj
+[100%] Building CXX object CMakeFiles/dt_size_10_obj.dir/dt_size_10.cc.o
+[100%] Built target dt_size_10_obj

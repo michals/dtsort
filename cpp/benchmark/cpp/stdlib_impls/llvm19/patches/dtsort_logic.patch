@@ -1,0 +1,65 @@
+--- generated/llvm19_algorithm/stable_sort.h.stock	2026-05-01 22:36:52.742394607 +0200
++++ generated/llvm19_algorithm/stable_sort.h	2026-05-01 22:36:52.894472122 +0200
+@@ -173,8 +173,19 @@
+     __h2.release();
+     return;
+   }
+-  if (__len <= 8) {
+-    target_std::__insertion_sort_move<_AlgPolicy, _Compare>(__first1, __last1, __first2, __comp);
++  if (__len <= MAX_DT_SIZE) {
++    using difference_type = typename iterator_traits<_RandomAccessIterator>::difference_type;
++    difference_type __idx[16] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
++    dt_dispatch(__idx, __idx + __len, [&](difference_type __a, difference_type __b) {
++      return __comp(*(__first1 + __a), *(__first1 + __b));
++    });
++    __destruct_n __d(0);
++    unique_ptr<value_type, __destruct_n&> __h(__first2, __d);
++    for (difference_type __i = 0; __i < __len; ++__i, (void)++__first2) {
++      ::new ((void*)__first2) value_type(_Ops::__iter_move(__first1 + __idx[__i]));
++      __d.template __incr<value_type>();
++    }
++    __h.release();
+     return;
+   }
+   typename iterator_traits<_RandomAccessIterator>::difference_type __l2 = __len / 2;
+@@ -207,6 +218,10 @@
+       _IterOps<_AlgPolicy>::iter_swap(__first, __last);
+     return;
+   }
++  if (__len <= MAX_DT_SIZE) {
++    dtsort_dispatch_entry(__first, __last, __comp);
++    return;
++  }
+   if (__len <= static_cast<difference_type>(__stable_sort_switch<value_type>::value)) {
+     target_std::__insertion_sort<_AlgPolicy, _Compare>(__first, __last, __comp);
+     return;
+@@ -259,11 +274,15 @@
+ template <class _RandomAccessIterator, class _Compare>
+ inline _LLVM19_HIDE_FROM_ABI void
+ stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp) {
++  if (__last - __first <= MAX_DT_SIZE) {
++    dtsort_dispatch_entry(__first, __last, __comp);
++    return;
++  }
+   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+ }
+ 
+ template <class _RandomAccessIterator>
+ inline _LLVM19_HIDE_FROM_ABI void stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last) {
+-  target_std::stable_sort(__first, __last, __less<>());
++  target_std::stable_sort(__first, __last, __less<>());
+ }
+
+ 
+ _LLVM19_END_NAMESPACE_STD
+--- generated/llvm19_algorithm/sort.h.stock	2026-05-01 22:36:52.905020605 +0200
++++ generated/llvm19_algorithm/sort.h	2026-05-01 22:36:53.011102932 +0200
+@@ -796,7 +796,7 @@
+     // Use insertion sort if the length of the range is below the specified limit.
+     if (__len < __limit) {
+       if (__leftmost) {
+-        target_std::__insertion_sort<_AlgPolicy, _Compare>(__first, __last, __comp);
++        dtsort_dispatch_entry(__first, __last, __comp);
+       } else {
+         target_std::__insertion_sort_unguarded<_AlgPolicy, _Compare>(__first, __last, __comp);
+       }

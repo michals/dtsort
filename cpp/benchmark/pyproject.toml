@@ -1,0 +1,27 @@
+[project]
+name = "dtsort-cpp-benchmark"
+version = "0.1.0"
+description = "Performance benchmark suite for the dtsort C++ optimal decision-tree sorter"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.5.0",
+    "numpy>=1.21.0",
+    "py-cpuinfo>=9.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-mock>=3.6.0",
+    "ruff>=0.1.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+exclude = ["cpp"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
