@@ -1,0 +1,8 @@
+# Standard Library Snapshots License
+
+The subdirectories in this folder contain snapshots of external C++ standard library implementations used solely for benchmarking purposes:
+
+- `gcc7/`, `gcc14/`, and `gcc16/`: Snapshots of the GNU C++ Library (`libstdc++`), governed by the **GPL with Runtime Exception**.
+- `llvm15/` and `llvm19/`: Snapshots of the LLVM C++ Library (`libc++`), governed by the **Apache License v2.0 with LLVM Exceptions**.
+
+These files are NOT part of the `dtsort-codegen` project. They are included here to provide a stable, reproducible environment for performance comparison. All original copyright notices and license headers within these files remain intact and govern their use.

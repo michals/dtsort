@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-05-28T14:56:53.188166",
+  "cmdline": "main.py -n 10 --impls DT,GCC16,LLVM19 --inputs random,reversed,sorted --adaptivity adaptive,entropy --sizes 100:20:2000000",
+  "git_hash": "d462653",
+  "max_n": 10,
+  "count_iters": 20,
+  "bench_iters": 7,
+  "mode": "gs",
+  "impls": [
+    "dt_stable_sort",
+    "GCC16",
+    "LLVM19"
+  ],
+  "types": "IntNaked,WideRow",
+  "duration_sec": 31189,
+  "only_counts": false,
+  "stages": [
+    "validate",
+    "counts",
+    "consistency",
+    "weight",
+    "benchmark_small",
+    "benchmark_large"
+  ],
+  "pure_dtsort": true,
+  "sizes": "20,22,25,28,32,36,40,45,51,57,64,72,81,91,102,114,129,144,162,182,205,230,258,290,326,366,411,462,519,583,655,736,826,928,1043,1171,1316,1478,1660,1865,2095,2354,2644,2970,3336,3748,4210,4729,5312,5967,6703,7530,8458,9502,10673,11990,13468,15129,16995,19091,21445,24090,27061,30398,34147,38358,43089,48403,54372,61077,68609,77071,86575,97252,109246,122718,137852,154853,173950,195402,219500,246569,276977,311135,349506,392608,441026,495415,556512,625143,702238,788841,886124,995405,1118162,1256058,1410960,1584966,1780430,2000000",
+  "inputs": "random,reversed,sorted",
+  "adaptivity": "adaptive,entropy",
+  "adaptivity_levels": [
+    "adaptive",
+    "entropy"
+  ],
+  "max_dt_size": 10,
+  "dt_block_size": 160,
+  "dt_mode": "GS",
+  "patched_sizes": [
+    45,
+    51,
+    57,
+    64
+  ],
+  "patch_source": "/Users/michal/code/dtsort-codegen/cpp/benchmark/logs/2026-05-27_22-05-05"
+}

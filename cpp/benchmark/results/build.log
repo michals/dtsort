@@ -1,0 +1,1455 @@
+
+--- [RUN] cmake -B build at 2026-05-27 22:05:05 ---
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/michal/code/dtsort-codegen/codegen/build
+
+--- [EXIT SUCCESS] elapsed: 0.07s ---
+
+--- [RUN] cmake --build build --target generate at 2026-05-27 22:05:05 ---
+[ 22%] Built target dtsort-verify-am
+[ 33%] Building CXX object CMakeFiles/dtsort-codegen.dir/src/main.cc.o
+[ 44%] Linking CXX executable dtsort-codegen
+[ 44%] Built target dtsort-codegen
+[ 66%] Built target dtsort-verify
+[ 88%] Built target dtsort-verify-em
+[100%] Generating all dtsort headers and theoretical metrics in output/
+
+Generating dtsort2_full (mode=full) for N=2...
+Initializing Solutions... Building Solutions for N=2...
+Adding all permutations...
+Adding all permutations... Added 2
+Counting all variations...
+Counting all variations... Processed 4
+Building Solutions counts...
+Building Solutions DONE
+ Done. (2 perms)
+  Found existing output/dtsort2_full.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [1..1] (avg 1)
+    Nodes:       3 (leaves 2)
+    Optimality:  YES (Theory: 1 @ OEIS A036604)
+    Path Length: 1 (min) / 1 (max)
+    Sorted path:   1
+    Reverse path:  1
+  Generating C++ code to include/dtsort2_full.hh...
+  Done.
+
+Generating dtsort3_full (mode=full) for N=3...
+Initializing Solutions... Building Solutions for N=3...
+Adding all permutations...
+Adding all permutations... Added 6
+Counting all variations...
+Counting all variations... Processed 27
+Building Solutions counts...
+Building Solutions DONE
+ Done. (6 perms)
+  Found existing output/dtsort3_full.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [2..3] (avg 2.66667)
+    Nodes:       11 (leaves 6)
+    Optimality:  YES (Theory: 3 @ OEIS A036604)
+    Path Length: 2 (min) / 3 (max)
+    Sorted path:   3
+    Reverse path:  3
+  Generating C++ code to include/dtsort3_full.hh...
+  Done.
+
+Generating dtsort4_full (mode=full) for N=4...
+Initializing Solutions... Building Solutions for N=4...
+Adding all permutations...
+Adding all permutations... Added 24
+Counting all variations...
+Counting all variations... Processed 256
+Building Solutions counts...
+Building Solutions DONE
+ Done. (24 perms)
+  Found existing output/dtsort4_full.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [4..5] (avg 4.66667)
+    Nodes:       47 (leaves 24)
+    Optimality:  YES (Theory: 5 @ OEIS A036604)
+    Path Length: 4 (min) / 5 (max)
+    Sorted path:   4
+    Reverse path:  4
+  Generating C++ code to include/dtsort4_full.hh...
+  Done.
+
+Generating dtsort5_full (mode=full) for N=5...
+Initializing Solutions... Building Solutions for N=5...
+Adding all permutations...
+Adding all permutations... Added 120
+Counting all variations...
+Counting all variations... Processed 3125
+Building Solutions counts...
+Building Solutions DONE
+ Done. (120 perms)
+  Found existing output/dtsort5_full.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [6..7] (avg 6.93333)
+    Nodes:       239 (leaves 120)
+    Optimality:  YES (Theory: 7 @ OEIS A036604)
+    Path Length: 6 (min) / 7 (max)
+    Sorted path:   7
+    Reverse path:  7
+  Generating C++ code to include/dtsort5_full.hh...
+  Done.
+
+Generating dtsort6_gs42 (mode=gs42) for N=6...
+Initializing Solutions... Building Solutions for N=6...
+Adding all permutations...
+Adding all permutations... Added 720
+Counting all variations...
+Counting all variations... Processed 46656
+Building Solutions counts...
+Building Solutions DONE
+ Done. (720 perms)
+  Found existing output/dtsort6_gs42.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [3..5] (avg 4)
+    Nodes:       29 (leaves 15)
+    Optimality:  NO (Theory: 10 @ OEIS A036604)
+    Path Length: 3 (min) / 5 (max)
+    Sorted path:   3
+    Reverse path:  4
+  Generating C++ code to include/dtsort6_gs42.hh...
+  Done.
+
+Generating dtsort7_gs52 (mode=gs52) for N=7...
+Initializing Solutions... Building Solutions for N=7...
+Adding all permutations...
+Adding all permutations... Added 5040
+Counting all variations...
+Counting all variations... Processed 823543
+Building Solutions counts...
+Building Solutions DONE
+ Done. (5040 perms)
+  Found existing output/dtsort7_gs52.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [4..5] (avg 4.47619)
+    Nodes:       41 (leaves 21)
+    Optimality:  NO (Theory: 13 @ OEIS A036604)
+    Path Length: 4 (min) / 5 (max)
+    Sorted path:   4
+    Reverse path:  4
+  Generating C++ code to include/dtsort7_gs52.hh...
+  Done.
+
+Generating dtsort8_gs53 (mode=gs53) for N=8...
+Initializing Solutions... Building Solutions for N=8...
+Adding all permutations...
+Adding all permutations... Added 40320
+Counting all variations...
+Counting all variations... Processed 16777216
+Building Solutions counts...
+Building Solutions DONE
+ Done. (40320 perms)
+  Found existing output/dtsort8_gs53.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [5..7] (avg 5.89286)
+    Nodes:       111 (leaves 56)
+    Optimality:  NO (Theory: 16 @ OEIS A036604)
+    Path Length: 5 (min) / 7 (max)
+    Sorted path:   6
+    Reverse path:  5
+  Generating C++ code to include/dtsort8_gs53.hh...
+  Done.
+
+Generating dtsort9_gs54 (mode=gs54) for N=9...
+Initializing Solutions... Building Solutions for N=9...
+Adding all permutations...
+Adding all permutations... Added 362880
+Skipping variation counting for N=9 (N^N too large)
+Building Solutions DONE
+ Done. (362880 perms)
+  Found existing output/dtsort9_gs54.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [6..8] (avg 7.07937)
+    Nodes:       251 (leaves 126)
+    Optimality:  NO (Theory: 19 @ OEIS A036604)
+    Path Length: 6 (min) / 8 (max)
+    Sorted path:   7
+    Reverse path:  6
+  Generating C++ code to include/dtsort9_gs54.hh...
+  Done.
+
+Generating dtsort10_gs55 (mode=gs55) for N=10...
+Initializing Solutions... Building Solutions for N=10...
+Adding all permutations...
+Adding all permutations... Added 3628800
+Skipping variation counting for N=10 (N^N too large)
+Building Solutions DONE
+ Done. (3628800 perms)
+  Found existing output/dtsort10_gs55.dt, loading... Done. (Loaded from cache)
+  [Stats]
+    Comparisons: [7..9] (avg 8.07937)
+    Nodes:       503 (leaves 252)
+    Optimality:  NO (Theory: 22 @ OEIS A036604)
+    Path Length: 7 (min) / 9 (max)
+    Sorted path:   7
+    Reverse path:  7
+  Generating C++ code to include/dtsort10_gs55.hh...
+  Done.
+[100%] Built target generate
+
+--- [EXIT SUCCESS] elapsed: 14.09s ---
+
+--- [RUN] /Users/michal/code/dtsort-codegen/codegen/build/dtsort-verify-am --csv output/pure-gs.csv --mode gs -n 10 at 2026-05-27 22:05:19 ---
+ Building Solutions for N=2...
+Adding all permutations...
+Adding all permutations... Added 2
+Counting all variations...
+Counting all variations... Processed 4
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=3...
+Adding all permutations...
+Adding all permutations... Added 6
+Counting all variations...
+Counting all variations... Processed 27
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=4...
+Adding all permutations...
+Adding all permutations... Added 24
+Counting all variations...
+Counting all variations... Processed 256
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=5...
+Adding all permutations...
+Adding all permutations... Added 120
+Counting all variations...
+Counting all variations... Processed 3125
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=6...
+Adding all permutations...
+Adding all permutations... Added 720
+Counting all variations...
+Counting all variations... Processed 46656
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=7...
+Adding all permutations...
+Adding all permutations... Added 5040
+Counting all variations...
+Counting all variations... Processed 823543
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=8...
+Adding all permutations...
+Adding all permutations... Added 40320
+Counting all variations...
+Counting all variations... Processed 16777216
+Building Solutions counts...
+Building Solutions DONE
+ Building Solutions for N=9...
+Adding all permutations...
+Adding all permutations... Added 362880
+Skipping variation counting for N=9 (N^N too large)
+Building Solutions DONE
+ Building Solutions for N=10...
+Adding all permutations...
+Adding all permutations... Added 3628800
+Skipping variation counting for N=10 (N^N too large)
+Building Solutions DONE
+
+--- [EXIT SUCCESS] elapsed: 16.64s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 22:05:36 ---
+Applying dtsort logic patch...
+patching file 'generated/stl_algo.h'
+GCC7 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.07s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 22:05:36 ---
+GCC 7 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 22:05:36 ---
+Applying dtsort logic patch...
+patching file 'generated/stl_algo.h'
+GCC14 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 22:05:36 ---
+GCC 14 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 22:05:36 ---
+Applying dtsort logic patch...
+patching file 'generated/stl_algo.h'
+GCC16 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.07s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 22:05:36 ---
+GCC 16 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.06s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 22:05:36 ---
+Copying original LLVM 15 headers to unique names...
+Applying dtsort logic patch...
+patching file 'generated/llvm15_stable_sort.h'
+patching file 'generated/llvm15_algorithm/stable_sort.h'
+patching file 'generated/llvm15_algorithm/sort.h'
+LLVM15 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.86s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 22:05:37 ---
+Copying original LLVM 15 headers to unique names...
+LLVM 15 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 0.86s ---
+
+--- [RUN] /bin/bash ./patch_dtsort.sh at 2026-05-27 22:05:38 ---
+Copying original LLVM 19 headers to unique names...
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__debug_utils/*: No such file or directory
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__bit/*: No such file or directory
+Applying dtsort logic patch...
+patching file 'generated/llvm19_algorithm/stable_sort.h'
+patching file 'generated/llvm19_algorithm/sort.h'
+LLVM19 dtsort patching complete.
+
+--- [EXIT SUCCESS] elapsed: 2.89s ---
+
+--- [RUN] /bin/bash ./patch_stock.sh at 2026-05-27 22:05:41 ---
+Copying original LLVM 19 headers to unique names...
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__debug_utils/*: No such file or directory
+cp: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/original/__bit/*: No such file or directory
+LLVM 19 stock patching complete.
+
+--- [EXIT SUCCESS] elapsed: 2.88s ---
+
+--- [RUN] cmake -DDTSORT_MAX_N=10 -DDT_MODE_GS=ON .. at 2026-05-27 22:05:44 ---
+-- git version: v1.8.3 normalized to 1.8.3
+-- Google Benchmark version: 1.8.3
+-- Enabling additional flags: -DINCLUDE_DIRECTORIES=/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/build/_deps/googlebenchmark-src/include
+-- Performing Test HAVE_THREAD_SAFETY_ATTRIBUTES -- success
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Performing Test HAVE_PTHREAD_AFFINITY -- failed to compile
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/build
+
+--- [EXIT SUCCESS] elapsed: 0.31s ---
+
+--- [RUN COMPILATION] make -j4 bench-dt_stable_sort-stock bench-dt_stable_sort-dtsort-em bench-dt_stable_sort-dtsort-am bench-GCC16-stock bench-GCC16-dtsort bench-LLVM19-stock bench-LLVM19-dtsort dt_size_2_obj dt_size_3_obj dt_size_4_obj dt_size_5_obj dt_size_6_obj dt_size_7_obj dt_size_8_obj dt_size_9_obj dt_size_10_obj ---
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-dt_stable_sort-stock.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:54:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:55:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:56:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:57:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:59:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:60:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:61:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:62:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+20 warnings generated.
+[100%] Linking CXX executable bench-dt_stable_sort-stock
+[100%] Built target bench-dt_stable_sort-stock
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-dt_stable_sort-dtsort-em.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:54:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:55:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:56:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:57:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:35:84: warning: unused parameter 'last' [-Wunused-parameter]
+   35 | inline void dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:59:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:60:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:61:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:44:88: warning: unused parameter 'last' [-Wunused-parameter]
+   44 | inline void dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:62:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:43:89: warning: unused parameter 'last' [-Wunused-parameter]
+   43 | inline void dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+20 warnings generated.
+[100%] Linking CXX executable bench-dt_stable_sort-dtsort-em
+[100%] Built target bench-dt_stable_sort-dtsort-em
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-dt_stable_sort-dtsort-am.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:54:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:55:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:56:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:57:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:59:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:60:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:61:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:14:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dt_stable_sort.hh:62:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+20 warnings generated.
+[100%] Linking CXX executable bench-dt_stable_sort-dtsort-am
+[100%] Built target bench-dt_stable_sort-dtsort-am
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-GCC16-stock.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:18:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:22:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:24:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:27:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:31:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:35:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:39:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:43:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/stl_algo.h:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:108:34: warning: keyword '__make_unsigned' will be made available as an identifier here [-Wkeyword-compat]
+  108 |     template<typename _Tp> using __make_unsigned = std::make_unsigned<_Tp>;
+      |                                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:170:37: warning: unused parameter '__first' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                     ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:170:52: warning: unused parameter '__holeIndex' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                    ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:170:71: warning: unused parameter '__len' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                                       ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:170:83: warning: unused parameter '__value' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                                                   ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:170:98: warning: unused parameter '__comp' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                                                                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:260:87: warning: unused parameter '__alloc' [-Wunused-parameter]
+  260 |                                                    _ForwardIterator __result, _Alloc& __alloc) {
+      |                                                                                       ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated_stock/../adapter.h:266:87: warning: unused parameter '__alloc' [-Wunused-parameter]
+  266 |                                                    _ForwardIterator __result, _Alloc& __alloc) {
+      |                                                                                       ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+28 warnings generated.
+[100%] Linking CXX executable bench-GCC16-stock
+[100%] Built target bench-GCC16-stock
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-GCC16-dtsort.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:18:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:22:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:24:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:27:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:31:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:35:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:39:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:17:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:43:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:8:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/stl_algo.h:58:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:108:34: warning: keyword '__make_unsigned' will be made available as an identifier here [-Wkeyword-compat]
+  108 |     template<typename _Tp> using __make_unsigned = std::make_unsigned<_Tp>;
+      |                                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:170:37: warning: unused parameter '__first' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                     ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:170:52: warning: unused parameter '__holeIndex' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                    ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:170:71: warning: unused parameter '__len' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                                       ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:170:83: warning: unused parameter '__value' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                                                   ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:170:98: warning: unused parameter '__comp' [-Wunused-parameter]
+  170 |     inline void __adjust_heap(_Iter __first, _Dist __holeIndex, _Dist __len, _Ptr __value, _Comp __comp) {
+      |                                                                                                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:260:87: warning: unused parameter '__alloc' [-Wunused-parameter]
+  260 |                                                    _ForwardIterator __result, _Alloc& __alloc) {
+      |                                                                                       ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/gcc16/generated/../adapter.h:266:87: warning: unused parameter '__alloc' [-Wunused-parameter]
+  266 |                                                    _ForwardIterator __result, _Alloc& __alloc) {
+      |                                                                                       ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+28 warnings generated.
+[100%] Linking CXX executable bench-GCC16-dtsort
+[100%] Built target bench-GCC16-dtsort
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-LLVM19-stock.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:18:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:22:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:24:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:27:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:31:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:35:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:39:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:43:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:250:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<IntElement_<>>' requested here
+  250 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:262:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<IntElement_<> *>, target_std::__less<void, void>>' requested here
+  262 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:267:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<> *>, target_std::__less<void, void>>' requested here
+  267 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<> *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:45:99: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<IntElement_<> *>>' requested here
+   45 |             if (!validate_type_impl<IntElement>(name, "IntElement", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                   ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:45:18: note: in instantiation of function template specialization 'validate_type_impl<IntElement_<>, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:45:69), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   45 |             if (!validate_type_impl<IntElement>(name, "IntElement", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:250:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<MultiKeyRecord>' requested here
+  250 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:262:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<MultiKeyRecord *>, target_std::__less<void, void>>' requested here
+  262 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:267:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<MultiKeyRecord *>, target_std::__less<void, void>>' requested here
+  267 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<MultiKeyRecord *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:48:101: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<MultiKeyRecord *>>' requested here
+   48 |             if (!validate_type_impl<MultiKeyRecord>(name, "MultiKey", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                     ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:48:18: note: in instantiation of function template specialization 'validate_type_impl<MultiKeyRecord, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:48:71), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   48 |             if (!validate_type_impl<MultiKeyRecord>(name, "MultiKey", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:250:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<WideRow>' requested here
+  250 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:262:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<WideRow *>, target_std::__less<void, void>>' requested here
+  262 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:267:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<WideRow *>, target_std::__less<void, void>>' requested here
+  267 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<WideRow *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:51:93: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<WideRow *>>' requested here
+   51 |             if (!validate_type_impl<WideRow>(name, "WideRow", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                             ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:51:18: note: in instantiation of function template specialization 'validate_type_impl<WideRow, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:51:63), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   51 |             if (!validate_type_impl<WideRow>(name, "WideRow", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:250:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<LongStringCommonPrefix>' requested here
+  250 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:262:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<LongStringCommonPrefix *>, target_std::__less<void, void>>' requested here
+  262 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:267:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<LongStringCommonPrefix *>, target_std::__less<void, void>>' requested here
+  267 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<LongStringCommonPrefix *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:54:111: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<LongStringCommonPrefix *>>' requested here
+   54 |             if (!validate_type_impl<LongStringCommonPrefix>(name, "LongPrefix", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:54:18: note: in instantiation of function template specialization 'validate_type_impl<LongStringCommonPrefix, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:54:81), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   54 |             if (!validate_type_impl<LongStringCommonPrefix>(name, "LongPrefix", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:250:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<ReversedDomain>' requested here
+  250 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:262:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<ReversedDomain *>, target_std::__less<void, void>>' requested here
+  262 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:267:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<ReversedDomain *>, target_std::__less<void, void>>' requested here
+  267 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<ReversedDomain *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:57:102: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<ReversedDomain *>>' requested here
+   57 |             if (!validate_type_impl<ReversedDomain>(name, "RevDomain", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                      ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:57:18: note: in instantiation of function template specialization 'validate_type_impl<ReversedDomain, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:57:72), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   57 |             if (!validate_type_impl<ReversedDomain>(name, "RevDomain", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:250:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<CaseInsensitiveString>' requested here
+  250 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:262:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<CaseInsensitiveString *>, target_std::__less<void, void>>' requested here
+  262 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:267:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<CaseInsensitiveString *>, target_std::__less<void, void>>' requested here
+  267 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<CaseInsensitiveString *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:60:110: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<CaseInsensitiveString *>>' requested here
+   60 |             if (!validate_type_impl<CaseInsensitiveString>(name, "CaseInsens", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                              ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:60:18: note: in instantiation of function template specialization 'validate_type_impl<CaseInsensitiveString, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:60:80), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   60 |             if (!validate_type_impl<CaseInsensitiveString>(name, "CaseInsens", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:250:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<IntElement_<false>>' requested here
+  250 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:262:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<IntElement_<false> *>, target_std::__less<void, void>>' requested here
+  262 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated_stock/llvm19_algorithm/stable_sort.h:267:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<false> *>, target_std::__less<void, void>>' requested here
+  267 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<false> *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/benchmark.h:36:27: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<IntElement_<false> *>>' requested here
+   36 |                 SortImpl::stable_sort(data.begin(), data.end());
+      |                           ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/benchmark.h:118:55: note: in instantiation of function template specialization 'BenchmarkWrappers<SortImpl>::register_small<IntElement_<false>>' requested here
+  118 |                 BenchmarkWrappers<SortImpl>::template register_small<decltype(dummy)>(name, pattern);
+      |                                                       ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:113:16: note: in instantiation of function template specialization 'run_benchmark<SortImpl>' requested here
+  113 |         return run_benchmark<SortImpl>(argc, argv, cli, impl_name, variant);
+      |                ^
+27 warnings generated.
+[100%] Linking CXX executable bench-LLVM19-stock
+[100%] Built target bench-LLVM19-stock
+[ 90%] Built target benchmark
+[ 95%] Building CXX object CMakeFiles/bench-LLVM19-dtsort.dir/src/main.cc.o
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:18:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:41:3: warning: unused label 'n_' [-Wunused-label]
+   41 | N(n_, b, a, l1, l0)
+      |   ^~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort2_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort2(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:42:3: warning: unused label 'n___' [-Wunused-label]
+   42 | N(n___, b, a, n1__, n0__)
+      |   ^~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort3_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort3(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:22:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:43:3: warning: unused label 'n______' [-Wunused-label]
+   43 | N(n______, b, a, n1_____, n0_____)
+      |   ^~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort4_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort4(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:24:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:44:3: warning: unused label 'ne6a8' [-Wunused-label]
+   44 | N(ne6a8, b, a, n99c5, n4ce2)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort5_full.hh:33:84: warning: unused parameter 'last' [-Wunused-parameter]
+   33 | inline bool dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                    ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:27:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:63:3: warning: unused label 'n4ce0' [-Wunused-label]
+   63 | N(n4ce0, e, b, n4455, n3bca)
+      |   ^~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort6_gs42.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort6gs42(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:31:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:64:3: warning: unused label 'n2b3f8' [-Wunused-label]
+   64 | N(n2b3f8, f, b, n26715, n21a32)
+      |   ^~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort7_gs52.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort7gs52(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:35:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:65:3: warning: unused label 'n1717802a' [-Wunused-label]
+   65 | N(n1717802a, g, c, n17169981, n1715b2d8)
+      |   ^~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort8_gs53.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort8gs53(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:39:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:66:3: warning: unused label 'n24fd14bcdf0' [-Wunused-label]
+   66 | N(n24fd14bcdf0, f, a, n18a8af5a34d, nc5449f78aa)
+      |   ^~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort9_gs54.hh:42:88: warning: unused parameter 'last' [-Wunused-parameter]
+   42 | inline bool dtsort9gs54(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                        ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:13:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/include/dt_dispatch.h:43:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:66:3: warning: unused label 'nb1bee9175b2862' [-Wunused-label]
+   66 | N(nb1bee9175b2862, f, a, n767f1a244af5d9, n3b3f4b313ac350)
+      |   ^~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/../../include/dtsort10_gs55.hh:41:89: warning: unused parameter 'last' [-Wunused-parameter]
+   41 | inline bool dtsort10gs55(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+      |                                                                                         ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:19:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:8:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/validation_logic.h:229:113: warning: unused parameter 'dummy' [-Wunused-parameter]
+  229 | std::vector<RunMetrics> run_large_counts_for_type(const std::string& impl_name, const std::string& type_name, T dummy, const std::vector<size_t>& sizes, const std::string& variant, int iterations, InputPattern pattern) {
+      |                                                                                                                 ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:20:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/counts.h:18:103: warning: unused parameter 'is_stock' [-Wunused-parameter]
+   18 | int run_counts(const CommandLine& cli, const std::string& impl_name, const std::string& variant, bool is_stock) {
+      |                                                                                                       ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:265:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<IntElement_<>>' requested here
+  265 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:281:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<IntElement_<> *>, target_std::__less<void, void>>' requested here
+  281 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:286:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<> *>, target_std::__less<void, void>>' requested here
+  286 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<> *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:45:99: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<IntElement_<> *>>' requested here
+   45 |             if (!validate_type_impl<IntElement>(name, "IntElement", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                   ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:45:18: note: in instantiation of function template specialization 'validate_type_impl<IntElement_<>, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:45:69), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   45 |             if (!validate_type_impl<IntElement>(name, "IntElement", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:265:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<MultiKeyRecord>' requested here
+  265 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:281:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<MultiKeyRecord *>, target_std::__less<void, void>>' requested here
+  281 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:286:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<MultiKeyRecord *>, target_std::__less<void, void>>' requested here
+  286 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<MultiKeyRecord *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:48:101: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<MultiKeyRecord *>>' requested here
+   48 |             if (!validate_type_impl<MultiKeyRecord>(name, "MultiKey", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                     ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:48:18: note: in instantiation of function template specialization 'validate_type_impl<MultiKeyRecord, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:48:71), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   48 |             if (!validate_type_impl<MultiKeyRecord>(name, "MultiKey", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:265:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<WideRow>' requested here
+  265 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:281:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<WideRow *>, target_std::__less<void, void>>' requested here
+  281 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:286:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<WideRow *>, target_std::__less<void, void>>' requested here
+  286 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<WideRow *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:51:93: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<WideRow *>>' requested here
+   51 |             if (!validate_type_impl<WideRow>(name, "WideRow", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                             ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:51:18: note: in instantiation of function template specialization 'validate_type_impl<WideRow, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:51:63), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   51 |             if (!validate_type_impl<WideRow>(name, "WideRow", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:265:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<LongStringCommonPrefix>' requested here
+  265 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:281:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<LongStringCommonPrefix *>, target_std::__less<void, void>>' requested here
+  281 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:286:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<LongStringCommonPrefix *>, target_std::__less<void, void>>' requested here
+  286 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<LongStringCommonPrefix *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:54:111: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<LongStringCommonPrefix *>>' requested here
+   54 |             if (!validate_type_impl<LongStringCommonPrefix>(name, "LongPrefix", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:54:18: note: in instantiation of function template specialization 'validate_type_impl<LongStringCommonPrefix, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:54:81), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   54 |             if (!validate_type_impl<LongStringCommonPrefix>(name, "LongPrefix", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:265:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<ReversedDomain>' requested here
+  265 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:281:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<ReversedDomain *>, target_std::__less<void, void>>' requested here
+  281 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:286:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<ReversedDomain *>, target_std::__less<void, void>>' requested here
+  286 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<ReversedDomain *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:57:102: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<ReversedDomain *>>' requested here
+   57 |             if (!validate_type_impl<ReversedDomain>(name, "RevDomain", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                      ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:57:18: note: in instantiation of function template specialization 'validate_type_impl<ReversedDomain, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:57:72), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   57 |             if (!validate_type_impl<ReversedDomain>(name, "RevDomain", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:265:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<CaseInsensitiveString>' requested here
+  265 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:281:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<CaseInsensitiveString *>, target_std::__less<void, void>>' requested here
+  281 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:286:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<CaseInsensitiveString *>, target_std::__less<void, void>>' requested here
+  286 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<CaseInsensitiveString *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:60:110: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<CaseInsensitiveString *>>' requested here
+   60 |             if (!validate_type_impl<CaseInsensitiveString>(name, "CaseInsens", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                                                                                                              ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:60:18: note: in instantiation of function template specialization 'validate_type_impl<CaseInsensitiveString, (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:60:80), (lambda at /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/validate.h:37:21)>' requested here
+   60 |             if (!validate_type_impl<CaseInsensitiveString>(name, "CaseInsens", [](auto f, auto l){ SortImpl::stable_sort(f, l); }, ref_sort, n)) all_passed = false;
+      |                  ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:105:16: note: in instantiation of function template specialization 'run_validate<SortImpl>' requested here
+  105 |         return run_validate<SortImpl>(cli, impl_name, variant);
+      |                ^
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:12:
+In file included from /Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:1:
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/adapter.h:245:17: warning: comparison of integers of different signs: 'ptrdiff_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+  245 |         if (__n > ptrdiff_t(-1) / sizeof(_Tp)) __n = ptrdiff_t(-1) / sizeof(_Tp);
+      |             ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:265:25: note: in instantiation of function template specialization 'target_std::get_temporary_buffer<IntElement_<false>>' requested here
+  265 |     __buf = target_std::get_temporary_buffer<value_type>(__len);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:281:15: note: in instantiation of function template specialization 'target_std::__stable_sort_impl<target_std::_ClassicAlgPolicy, std::__wrap_iter<IntElement_<false> *>, target_std::__less<void, void>>' requested here
+  281 |   target_std::__stable_sort_impl<_ClassicAlgPolicy>(target_std::move(__first), target_std::move(__last), __comp);
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/stdlib_impls/llvm19/generated/llvm19_algorithm/stable_sort.h:286:15: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<false> *>, target_std::__less<void, void>>' requested here
+  286 |   target_std::stable_sort(__first, __last, __less<>());
+      |               ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:47:25: note: in instantiation of function template specialization 'target_std::stable_sort<std::__wrap_iter<IntElement_<false> *>>' requested here
+   47 |             target_std::stable_sort(first, last);
+      |                         ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/benchmark.h:36:27: note: in instantiation of function template specialization 'SortImpl::stable_sort<std::__wrap_iter<IntElement_<false> *>>' requested here
+   36 |                 SortImpl::stable_sort(data.begin(), data.end());
+      |                           ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/modes/benchmark.h:118:55: note: in instantiation of function template specialization 'BenchmarkWrappers<SortImpl>::register_small<IntElement_<false>>' requested here
+  118 |                 BenchmarkWrappers<SortImpl>::template register_small<decltype(dummy)>(name, pattern);
+      |                                                       ^
+/Users/michal/code/dtsort-codegen/cpp/benchmark/cpp/src/main.cc:113:16: note: in instantiation of function template specialization 'run_benchmark<SortImpl>' requested here
+  113 |         return run_benchmark<SortImpl>(argc, argv, cli, impl_name, variant);
+      |                ^
+27 warnings generated.
+[100%] Linking CXX executable bench-LLVM19-dtsort
+[100%] Built target bench-LLVM19-dtsort
+[100%] Building CXX object CMakeFiles/dt_size_2_obj.dir/dt_size_2.cc.o
+[100%] Built target dt_size_2_obj
+[100%] Building CXX object CMakeFiles/dt_size_3_obj.dir/dt_size_3.cc.o
+[100%] Built target dt_size_3_obj
+[100%] Building CXX object CMakeFiles/dt_size_4_obj.dir/dt_size_4.cc.o
+[100%] Built target dt_size_4_obj
+[100%] Building CXX object CMakeFiles/dt_size_5_obj.dir/dt_size_5.cc.o
+[100%] Built target dt_size_5_obj
+[100%] Building CXX object CMakeFiles/dt_size_6_obj.dir/dt_size_6.cc.o
+[100%] Built target dt_size_6_obj
+[100%] Building CXX object CMakeFiles/dt_size_7_obj.dir/dt_size_7.cc.o
+[100%] Built target dt_size_7_obj
+[100%] Building CXX object CMakeFiles/dt_size_8_obj.dir/dt_size_8.cc.o
+[100%] Built target dt_size_8_obj
+[100%] Building CXX object CMakeFiles/dt_size_9_obj.dir/dt_size_9.cc.o
+[100%] Built target dt_size_9_obj
+[100%] Building CXX object CMakeFiles/dt_size_10_obj.dir/dt_size_10.cc.o
+[100%] Built target dt_size_10_obj

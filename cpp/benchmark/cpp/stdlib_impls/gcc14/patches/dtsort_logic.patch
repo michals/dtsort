@@ -1,0 +1,62 @@
+--- generated/stl_algo.h	2026-04-30 20:47:26.057589924 +0200
++++ generated/stl_algo.h	2026-04-30 20:47:34.258468869 +0200
+@@ -1819,7 +1819,7 @@
+ 					  __comp);
+ 	}
+       else
+-	target_std::__insertion_sort(__first, __last, __comp);
++	dtsort_dispatch_entry(__first, __last, __comp);
+     }
+ 
+   /// This is a helper function...
+@@ -1933,7 +1933,7 @@
+ 	  else
+ 	    __last = __cut;
+ 	}
+-      target_std::__insertion_sort(__first, __last, __comp);
++      dtsort_dispatch_entry(__first, __last, __comp);
+     }
+ 
+   /// @endcond
+@@ -2661,10 +2661,19 @@
+     {
+       while (__last - __first >= __chunk_size)
+ 	{
+-	  target_std::__insertion_sort(__first, __first + __chunk_size, __comp);
++	  if (__chunk_size <= MAX_DT_SIZE)
++	    dtsort_dispatch_entry(__first, __first + __chunk_size, __comp);
++	  else
++	    target_std::__insertion_sort(__first, __first + __chunk_size, __comp);
+ 	  __first += __chunk_size;
+ 	}
+-      target_std::__insertion_sort(__first, __last, __comp);
++      if (__first != __last)
++	{
++	  if (__last - __first <= MAX_DT_SIZE)
++	    dtsort_dispatch_entry(__first, __last, __comp);
++	  else
++	    target_std::__insertion_sort(__first, __last, __comp);
++	}
+     }
+ 
+   enum { _S_chunk_size = 7 };
+@@ -2745,7 +2754,7 @@
+     {
+       if (__last - __first < 15)
+ 	{
+-	  target_std::__insertion_sort(__first, __last, __comp);
++	  dtsort_dispatch_entry(__first, __last, __comp);
+ 	  return;
+ 	}
+       _RandomAccessIterator __middle = __first + (__last - __first) / 2;
+@@ -4941,6 +4950,12 @@
+       if (__first == __last)
+ 	return;
+ 
++      if (__last - __first <= MAX_DT_SIZE)
++	{
++	  dtsort_dispatch_entry(__first, __last, __comp);
++	  return;
++	}
++
+ #if _GLIBCXX_HOSTED
