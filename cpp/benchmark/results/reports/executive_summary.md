@@ -1,7 +1,7 @@
 # dtsort Sorter Performance: Executive Summary
 
-- **Timestamp**: `2026-05-27T04:37:13.236627`
-- **Git Commit**: `d41b20c`
+- **Timestamp**: `2026-05-28T14:56:53.188166`
+- **Git Commit**: `d462653`
 - **Mode**: `gs` (Block Size: `160`, sizeof(T) > 32 Threshold)
 
 ## 1. Peak Speedup Cheat Sheet
@@ -10,12 +10,12 @@ The table below displays the maximum speedup gains achieved by `dt_stable_sort` 
 
 | Type | Distribution | Peak Speedup (High Entropy) | Optimal Size (N) | Peak Speedup (Adaptive Mode) | Optimal Size (N) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **IntNaked** | Random | **+24.6%** | 40 | **+24.9%** | 72 |
-| **IntNaked** | Sorted | **+44.6%** | 72 | **+444.3%** | 4,729 |
-| **IntNaked** | Reversed | **+36.0%** | 40 | **+41.3%** | 40 |
-| **WideRow** | Random | **+142.4%** | 290 | **+143.4%** | 290 |
-| **WideRow** | Sorted | **+137.6%** | 290 | **+153.4%** | 290 |
-| **WideRow** | Reversed | **+155.9%** | 258 | **+159.2%** | 258 |
+| **IntNaked** | Random | **+26.1%** | 40 | **+25.1%** | 72 |
+| **IntNaked** | Sorted | **+45.0%** | 72 | **+438.6%** | 4,729 |
+| **IntNaked** | Reversed | **+35.0%** | 40 | **+40.8%** | 40 |
+| **WideRow** | Random | **+142.0%** | 290 | **+143.4%** | 290 |
+| **WideRow** | Sorted | **+150.8%** | 290 | **+156.1%** | 290 |
+| **WideRow** | Reversed | **+157.9%** | 258 | **+160.3%** | 258 |
 
 > **Note on Move Savings**: The reported $1.0N$ moves are bounded and occur specifically within the cache-aligned group index sorting phase for heavy objects (`sizeof(T) > 32` bytes) within each block of size $M = 160$ elements.
 

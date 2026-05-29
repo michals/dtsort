@@ -1,16 +1,18 @@
 {
-  "timestamp": "2026-05-27T04:37:13.236627",
-  "cmdline": "main.py -n 10 --impls DT --inputs random,reversed,sorted --adaptivity adaptive,entropy --sizes 100:20:2000000",
-  "git_hash": "d41b20c",
+  "timestamp": "2026-05-28T14:56:53.188166",
+  "cmdline": "main.py -n 10 --impls DT,GCC16,LLVM19 --inputs random,reversed,sorted --adaptivity adaptive,entropy --sizes 100:20:2000000",
+  "git_hash": "d462653",
   "max_n": 10,
   "count_iters": 20,
   "bench_iters": 7,
   "mode": "gs",
   "impls": [
-    "dt_stable_sort"
+    "dt_stable_sort",
+    "GCC16",
+    "LLVM19"
   ],
   "types": "IntNaked,WideRow",
-  "duration_sec": 13156,
+  "duration_sec": 31189,
   "only_counts": false,
   "stages": [
     "validate",
@@ -30,5 +32,12 @@
   ],
   "max_dt_size": 10,
   "dt_block_size": 160,
-  "dt_mode": "GS"
+  "dt_mode": "GS",
+  "patched_sizes": [
+    45,
+    51,
+    57,
+    64
+  ],
+  "patch_source": "/Users/michal/code/dtsort-codegen/cpp/benchmark/logs/2026-05-27_22-05-05"
 }

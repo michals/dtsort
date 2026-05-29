@@ -4,21 +4,25 @@ dtsort Benchmark Suite - Execution Estimation
   Binary bench-dt_stable_sort-stock     -> Small:   54 cases, Large:  600 cases
   Binary bench-dt_stable_sort-dtsort-em -> Small:   54 cases, Large:  600 cases
   Binary bench-dt_stable_sort-dtsort-am -> Small:   54 cases, Large:  600 cases
+  Binary bench-GCC16-stock              -> Small:   54 cases, Large:  600 cases
+  Binary bench-GCC16-dtsort             -> Small:   54 cases, Large:  600 cases
+  Binary bench-LLVM19-stock             -> Small:   54 cases, Large:  600 cases
+  Binary bench-LLVM19-dtsort            -> Small:   54 cases, Large:  600 cases
 ==============================================
 Summary of Expected Runtime:
 ==============================================
-  Target Binaries:              3 (0 missing)
-  Unique Test Configurations:   1962
+  Target Binaries:              7 (0 missing)
+  Unique Test Configurations:   4578
   Repetitions per test:         7
-  Total Wall-Clock Test Runs:   13734
+  Total Wall-Clock Test Runs:   32046
 ----------------------------------------------
-  Estimated Verify/Counts Time: 13s
-  Estimated Benchmark Time:     2h 40m 13s
+  Estimated Verify/Counts Time: 29s
+  Estimated Benchmark Time:     8h 39m 20s
   --------------------------------------------
-  TOTAL EXPECTED RUN TIME:      2h 40m 27s
-  ESTIMATED COMPLETION (ETA):   03:38:24
+  TOTAL EXPECTED RUN TIME:      8h 39m 50s
+  ESTIMATED COMPLETION (ETA):   06:46:20 (2026-05-28)
 ==============================================
 
 ==============================================
-Actual Run Duration: 3h 39m 16s (13156 seconds)
+Actual Run Duration: 8h 39m 49s (31189 seconds)
 ==============================================

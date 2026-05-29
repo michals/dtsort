@@ -187,18 +187,6 @@
         tr:hover td {
             background-color: rgba(255, 255, 255, 0.02);
         }
-        
-        .search-box {
-            background: #27272a;
-            border: 1px solid var(--border-color);
-            color: #fff;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-family: inherit;
-            width: 100%;
-            max-width: 300px;
-            margin-bottom: 15px;
-        }
     </style>
 </head>
 <body>
@@ -313,7 +301,12 @@
 
     <!-- TAB 4: Raw Data Table -->
     <div id="tab-raw" class="tab-content">
-        <input type="text" id="raw-search" class="search-box" placeholder="Search raw results..." oninput="filterRawTable()">
+        <div style="display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 15px;">
+            <span style="color: var(--text-secondary); font-size: 13px;">⚠️ Note: Table displays first 1,000 records.</span>
+            <button onclick="downloadFullCSV()" style="background: var(--accent-blue); border: none; color: #fff; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.9" onmouseout="this.style.opacity=1.0">
+                📥 Download Full CSV
+            </button>
+        </div>
         <table id="raw-data-table">
             <thead>
                 <tr>
@@ -345,15 +338,92 @@
         const chartInstances = {};
         let throughputChartInstance = null;
 
+        function saveStateToURL() {
+            const params = new URLSearchParams();
+            
+            // Save Tab
+            const activeTab = document.querySelector('.tab-btn.active');
+            if (activeTab) {
+                const clickAttr = activeTab.getAttribute('onclick') || '';
+                const match = clickAttr.match(/'([^']+)'/);
+                if (match) params.set('tab', match[1]);
+            }
+            
+            // Save Large N parameters
+            params.set('type', document.getElementById('curve-type').value);
+            params.set('pattern', document.getElementById('curve-pattern').value);
+            params.set('metric', document.getElementById('curve-metric').value);
+            params.set('minN', document.getElementById('curve-min-n').value);
+            params.set('maxN', document.getElementById('curve-max-n').value);
+            
+            // Save Throughput parameters if they exist on the page
+            const tpTypeEl = document.getElementById('tp-type');
+            if (tpTypeEl) {
+                params.set('tpType', tpTypeEl.value);
+            }
+            
+            // Preserve loaded chart scroll parameter if already present in incoming URL
+            const incomingParams = new URLSearchParams(window.location.hash.substring(1));
+            if (incomingParams.has('chart')) {
+                params.set('chart', incomingParams.get('chart'));
+            }
+            
+            // Update dynamic anchor links on chart headers
+            document.querySelectorAll('.chart-title-link').forEach(link => {
+                const impl = link.getAttribute('data-impl');
+                const titleParams = new URLSearchParams(params);
+                titleParams.set('chart', impl);
+                link.href = '#' + titleParams.toString();
+            });
+            
+            // Update hash silently without page jumps or reloads
+            history.replaceState(null, '', '#' + params.toString());
+        }
+
+        function loadStateFromURL() {
+            if (!window.location.hash) return;
+            
+            const params = new URLSearchParams(window.location.hash.substring(1));
+            
+            // 1. Populate Filters
+            if (params.has('type')) document.getElementById('curve-type').value = params.get('type');
+            if (params.has('pattern')) document.getElementById('curve-pattern').value = params.get('pattern');
+            if (params.has('metric')) document.getElementById('curve-metric').value = params.get('metric');
+            if (params.has('minN')) document.getElementById('curve-min-n').value = params.get('minN');
+            if (params.has('maxN')) document.getElementById('curve-max-n').value = params.get('maxN');
+            if (params.has('tpType') && document.getElementById('tp-type')) {
+                document.getElementById('tp-type').value = params.get('tpType');
+            }
+            
+            // 2. Activate correct Tab programmatically
+            if (params.has('tab')) {
+                const tabId = params.get('tab');
+                switchTab(tabId);
+            }
+            
+            // 3. Handle smooth scrolling to target chart section
+            if (params.has('chart')) {
+                const targetImpl = params.get('chart').toLowerCase();
+                setTimeout(() => {
+                    const section = document.getElementById(`section-${targetImpl}`);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 300);
+            }
+        }
+
         function switchTab(tabId) {
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('active');
+                if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId)) {
+                    btn.classList.add('active');
+                }
             });
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.remove('active');
             });
             
-            event.target.classList.add('active');
             document.getElementById('tab-' + tabId).classList.add('active');
             
             if (tabId === 'curves') {
@@ -361,6 +431,8 @@
             } else if (tabId === 'throughput') {
                 updateThroughputChart();
             }
+            
+            saveStateToURL();
         }
 
         function initDashboard() {
@@ -414,10 +486,13 @@
                     
                     const section = document.createElement('div');
                     section.className = 'chart-section';
+                    section.id = `section-${impl.toLowerCase()}`;
                     section.style.marginBottom = '40px';
                     section.innerHTML = `
-                        <h3 style="margin-bottom: 12px; color: #fff; font-weight: 600; font-size: 18px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
-                            ${label}
+                        <h3 style="margin-bottom: 12px; font-weight: 600; font-size: 18px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                            <a href="#" class="chart-title-link" data-impl="${impl.toLowerCase()}" style="color: #fff; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='#fff'">
+                                ${label}
+                            </a>
                         </h3>
                         <div class="chart-container">
                             <canvas id="chart-${impl}"></canvas>
@@ -427,7 +502,15 @@
                 });
             }
             
-            updateCurveChart();
+            // Load state from URL. If URL has a 'tab' param, switchTab() will run,
+            // which already triggers updateCurveChart() or updateThroughputChart().
+            // Otherwise, we manually trigger updateCurveChart() for the default tab!
+            const params = new URLSearchParams(window.location.hash.substring(1));
+            loadStateFromURL();
+            
+            if (!params.has('tab')) {
+                updateCurveChart();
+            }
         }
 
         const horizontalLinePlugin = {
@@ -459,6 +542,31 @@
             const minN = parseInt(document.getElementById('curve-min-n').value) || 30;
             const maxN = parseInt(document.getElementById('curve-max-n').value) || 2200000;
             
+            const variantConfig = {
+                'stock': {
+                    label: 'Stock Fallback',
+                    color: '#7f7f7f',
+                },
+                'dtsort-em': {
+                    label: 'dtsort (High Entropy)',
+                    speedupLabel: 'dtsort (High Entropy) Speedup',
+                    color: '#3b82f6',
+                    bgColor: 'rgba(59, 130, 246, 0.1)'
+                },
+                'dtsort-am': {
+                    label: 'dtsort (Adaptive Mode)',
+                    speedupLabel: 'dtsort (Adaptive Mode) Speedup',
+                    color: '#f97316',
+                    bgColor: 'rgba(249, 115, 22, 0.1)'
+                },
+                'dtsort': {
+                    label: 'dtsort (Patched)',
+                    speedupLabel: 'dtsort (Patched) Speedup',
+                    color: '#10b981',
+                    bgColor: 'rgba(16, 185, 129, 0.1)'
+                }
+            };
+            
             const uniqueImpls = Array.from(new Set(db.wall_clock.map(r => r.impl)));
             uniqueImpls.sort((a, b) => {
                 if (a === 'dt') return -1;
@@ -484,107 +592,75 @@
                 let yLabel = '';
 
                 if (metric === 'speedup') {
-                    const speedupEM = [];
-                    const speedupAM = [];
-                    
-                    validSizes.forEach(sz => {
-                        const stockVal = pivot[sz]['stock'];
-                        const emVal = pivot[sz]['dtsort-em'];
-                        const amVal = pivot[sz]['dtsort-am'];
-                        
-                        speedupEM.push({ x: sz, y: emVal ? stockVal / emVal : null });
-                        speedupAM.push({ x: sz, y: amVal ? stockVal / amVal : null });
-                    });
-                    
-                    datasets.push({
-                        label: 'dtsort (High Entropy) Speedup',
-                        data: speedupEM,
-                        borderColor: '#3b82f6',
-                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.1,
-                        spanGaps: true
-                    });
-                    datasets.push({
-                        label: 'dtsort (Adaptive Mode) Speedup',
-                        data: speedupAM,
-                        borderColor: '#f97316',
-                        backgroundColor: 'rgba(249, 115, 22, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.1,
-                        spanGaps: true
-                    });
                     yLabel = 'Speedup Factor (Stock / dtsort)';
-                } else if (metric === 'ns_per_elem') {
-                    const stockVal = [];
-                    const emVal = [];
-                    const amVal = [];
                     
-                    validSizes.forEach(sz => {
-                        stockVal.push({ x: sz, y: pivot[sz]['stock'] / sz });
-                        if (pivot[sz]['dtsort-em']) emVal.push({ x: sz, y: pivot[sz]['dtsort-em'] / sz });
-                        if (pivot[sz]['dtsort-am']) amVal.push({ x: sz, y: pivot[sz]['dtsort-am'] / sz });
+                    const variantsToDraw = ['stock', 'dtsort-em', 'dtsort-am', 'dtsort'];
+                    variantsToDraw.forEach(variant => {
+                        const dataPoints = [];
+                        let hasData = false;
+                        
+                        validSizes.forEach(sz => {
+                            const stockVal = pivot[sz]['stock'];
+                            if (variant === 'stock') {
+                                if (stockVal !== undefined) {
+                                    dataPoints.push({ x: sz, y: 1.0 });
+                                    hasData = true;
+                                }
+                            } else {
+                                const variantVal = pivot[sz][variant];
+                                if (stockVal !== undefined && variantVal !== undefined) {
+                                    dataPoints.push({ x: sz, y: stockVal / variantVal });
+                                    hasData = true;
+                                }
+                            }
+                        });
+                        
+                        if (hasData) {
+                            const cfg = variantConfig[variant];
+                            datasets.push({
+                                label: variant === 'stock' ? cfg.label : cfg.speedupLabel,
+                                data: dataPoints,
+                                borderColor: cfg.color,
+                                backgroundColor: variant === 'stock' ? undefined : cfg.bgColor,
+                                borderWidth: variant === 'stock' ? 1.5 : 2,
+                                tension: 0.1,
+                                spanGaps: true
+                            });
+                        }
                     });
-                    
-                    datasets.push({
-                        label: 'Stock Fallback',
-                        data: stockVal,
-                        borderColor: '#7f7f7f',
-                        borderWidth: 1.5,
-                        tension: 0.1,
-                        fill: false
-                    });
-                    datasets.push({
-                        label: 'dtsort (High Entropy)',
-                        data: emVal,
-                        borderColor: '#3b82f6',
-                        borderWidth: 2,
-                        tension: 0.1,
-                        fill: false
-                    });
-                    datasets.push({
-                        label: 'dtsort (Adaptive Mode)',
-                        data: amVal,
-                        borderColor: '#f97316',
-                        borderWidth: 2,
-                        tension: 0.1,
-                        fill: false
-                    });
-                    yLabel = 'Sorting Time per Element (ns / element)';
                 } else {
-                    // total_ns
-                    const stockVal = [];
-                    const emVal = [];
-                    const amVal = [];
+                    if (metric === 'ns_per_elem') {
+                        yLabel = 'Sorting Time per Element (ns / element)';
+                    } else {
+                        yLabel = 'Total Sorting Time (nanoseconds)';
+                    }
                     
-                    validSizes.forEach(sz => {
-                        stockVal.push({ x: sz, y: pivot[sz]['stock'] });
-                        if (pivot[sz]['dtsort-em']) emVal.push({ x: sz, y: pivot[sz]['dtsort-em'] });
-                        if (pivot[sz]['dtsort-am']) amVal.push({ x: sz, y: pivot[sz]['dtsort-am'] });
+                    const variantsToDraw = ['stock', 'dtsort-em', 'dtsort-am', 'dtsort'];
+                    variantsToDraw.forEach(variant => {
+                        const dataPoints = [];
+                        let hasData = false;
+                        
+                        validSizes.forEach(sz => {
+                            const val = pivot[sz][variant];
+                            if (val !== undefined) {
+                                const yVal = (metric === 'ns_per_elem') ? (val / sz) : val;
+                                dataPoints.push({ x: sz, y: yVal });
+                                hasData = true;
+                            }
+                        });
+                        
+                        if (hasData) {
+                            const cfg = variantConfig[variant];
+                            datasets.push({
+                                label: cfg.label,
+                                data: dataPoints,
+                                borderColor: cfg.color,
+                                borderWidth: variant === 'stock' ? 1.5 : 2,
+                                tension: 0.1,
+                                fill: false
+                            });
+                        }
                     });
-                    
-                    datasets.push({
-                        label: 'Stock Fallback',
-                        data: stockVal,
-                        borderColor: '#7f7f7f',
-                        borderWidth: 1.5,
-                        tension: 0.1
-                    });
-                    datasets.push({
-                        label: 'dtsort (High Entropy)',
-                        data: emVal,
-                        borderColor: '#3b82f6',
-                        borderWidth: 2,
-                        tension: 0.1
-                    });
-                    datasets.push({
-                        label: 'dtsort (Adaptive Mode)',
-                        data: amVal,
-                        borderColor: '#f97316',
-                        borderWidth: 2,
-                        tension: 0.1
-                    });
-                    yLabel = 'Total Sorting Time (nanoseconds)';
                 }
                 
                 const canvasEl = document.getElementById(`chart-${impl}`);
@@ -647,6 +723,7 @@
                     }
                 });
             });
+            saveStateToURL();
         }
 
         function updateThroughputChart() {
@@ -724,6 +801,7 @@
                     }
                 }
             });
+            saveStateToURL();
         }
 
         function renderSorterTable() {
@@ -752,8 +830,8 @@
             const tbody = document.getElementById('raw-table-body');
             tbody.innerHTML = '';
             
-            // Limit display to first 200 rows for performance
-            const limit = 200;
+            // Limit display to first 1000 rows for performance
+            const limit = 1000;
             const subset = db.wall_clock.slice(0, limit);
             
             subset.forEach(r => {
@@ -770,31 +848,27 @@
             });
         }
 
-        function filterRawTable() {
-            const q = document.getElementById('raw-search').value.toLowerCase();
-            const tbody = document.getElementById('raw-table-body');
-            tbody.innerHTML = '';
+        function downloadFullCSV() {
+            const headers = ['Implementation', 'Variant', 'Type', 'Pattern', 'Size', 'Time (ns)'];
+            const rows = db.wall_clock.map(r => [
+                r.impl,
+                r.variant,
+                r.type,
+                r.pattern,
+                r.size,
+                r.real_ns.toFixed(2)
+            ]);
             
-            let count = 0;
-            for (let i = 0; i < db.wall_clock.length; i++) {
-                const r = db.wall_clock[i];
-                const matchStr = `${r.impl} ${r.variant} ${r.type} ${r.pattern} ${r.size}`.toLowerCase();
-                
-                if (matchStr.includes(q)) {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                        <td>${r.impl}</td>
-                        <td><span style="font-family: monospace; color: var(--accent-orange);">${r.variant}</span></td>
-                        <td>${r.type}</td>
-                        <td>${r.pattern}</td>
-                        <td>${r.size.toLocaleString()}</td>
-                        <td style="font-weight: 600; color: #fff;">${r.real_ns.toFixed(2)} ns</td>
-                    `;
-                    tbody.appendChild(tr);
-                    count++;
-                    if (count >= 200) break;
-                }
-            }
+            const csvContent = [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'dtsort-benchmark.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
 
         window.onload = initDashboard;

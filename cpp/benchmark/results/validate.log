@@ -7,3 +7,9 @@ dt_stable_sort_dtsort-em: ALL PASS
 --- bench-dt_stable_sort-dtsort-am ---
 dt_stable_sort_dtsort-am: ALL PASS
 
+--- bench-GCC16-dtsort ---
+GCC16_dtsort: ALL PASS
+
+--- bench-LLVM19-dtsort ---
+LLVM19_dtsort: ALL PASS
+

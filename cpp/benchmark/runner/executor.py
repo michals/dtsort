@@ -40,15 +40,7 @@ class BenchmarkCase(NamedTuple):
             size = int(parts[4])
         except ValueError:
             return None
-        return cls(
-            impl=parts[0],
-            variant=parts[1],
-            type_lbl=parts[2],
-            pattern=parts[3],
-            size=size
-        )
-
-
+        return cls(impl=parts[0], variant=parts[1], type_lbl=parts[2], pattern=parts[3], size=size)
 
 
 def _format_duration(seconds: float) -> str:
@@ -353,7 +345,6 @@ def estimate_runtime(config: RunConfig, build_dir: Path, is_dry_run_cli: bool = 
 
             est_bench_seconds += rep_count * (t_timed + t_alloc + t_pre_sort)
 
-
     total_runs = total_unique_tests * rep_count
 
     # Other stages (validate, counts, consistency, weight)
@@ -485,7 +476,10 @@ def execute_stages(config: RunConfig, build_dir: Path, log_dir: Path) -> int:
                 completed_small += 1
                 est_sec = estimate_binary_stage_runtime(config, build_dir, bin_name, BenchmarkStage.BENCHMARK_SMALL)
                 est_str = f" (estimated runtime: {_format_duration(est_sec)})" if est_sec is not None else ""
-                print(f"    [Sequential] Executing SmallN bench {completed_small} of {total_tasks}{est_str}...", flush=True)
+                print(
+                    f"    [Sequential] Executing SmallN bench {completed_small} of {total_tasks}{est_str}...",
+                    flush=True,
+                )
                 res_small = run_binary_stage(
                     config, build_dir, log_dir, bin_name, BenchmarkStage.BENCHMARK_SMALL, file_lock
                 )
@@ -499,7 +493,10 @@ def execute_stages(config: RunConfig, build_dir: Path, log_dir: Path) -> int:
                 completed_large += 1
                 est_sec = estimate_binary_stage_runtime(config, build_dir, bin_name, BenchmarkStage.BENCHMARK_LARGE)
                 est_str = f" (estimated runtime: {_format_duration(est_sec)})" if est_sec is not None else ""
-                print(f"    [Sequential] Executing LargeN bench {completed_large} of {total_tasks}{est_str}...", flush=True)
+                print(
+                    f"    [Sequential] Executing LargeN bench {completed_large} of {total_tasks}{est_str}...",
+                    flush=True,
+                )
                 res_large = run_binary_stage(
                     config, build_dir, log_dir, bin_name, BenchmarkStage.BENCHMARK_LARGE, file_lock
                 )

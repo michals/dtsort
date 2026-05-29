@@ -39,7 +39,7 @@ Pure dt-sort handles only small N (≤ 8–10), but it is designed to be plugged
 - [`PartialMatrix.hh`](../src/PartialMatrix.hh) — `PartialMatrix<N>`: partially-known comparison matrix with a `mask` bitset tracking known cells
 - [`Solutions.hh`](../src/Solutions.hh) — `Solutions<N>`: **core algorithm** — enumerates all permutations, counts variations, implements `split()` for decision tree construction
 - [`DecisionTree.hh`](../src/DecisionTree.hh) — `DTNode<N>` + `buildTree<N>()`: recursive decision tree builder (Phase 1)
-- [`cycle.hh`](../../cpp/include/cycle.hh) — `X()` overloads: in-place cycle (right-shift) of 2–8 elements via `std::move`
+- [`dtsort_common.hh`](../../cpp/include/dtsort_common.hh) — Centralized macros and `X()` overloads: in-place cycle (right-shift) of 2–10 elements via `std::move`
 
 ### Code Generation (`src/gen/`)
 

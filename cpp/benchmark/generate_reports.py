@@ -9,6 +9,7 @@ Generates:
 5. interactive_report.html (Self-contained offline HTML/JS dashboard)
 """
 
+import json
 import re
 import sqlite3
 import sys
@@ -49,7 +50,7 @@ def parse_active_headers(root_dir: Path, output_dir: Path) -> dict[int, SorterCh
 
     characteristics = {}
     for filename in includes:
-        filepath = output_dir / filename
+        filepath = root_dir / "include" / filename
         if filepath.exists():
             match = re.search(r"dtsort(\d+)", filename)
             if not match:
@@ -60,7 +61,14 @@ def parse_active_headers(root_dir: Path, output_dir: Path) -> dict[int, SorterCh
             nodes = None
             try:
                 for line in filepath.read_text(encoding="utf-8").splitlines():
-                    if "Leaves:" in line:
+                    if "Stats: {" in line:
+                        try:
+                            stats_json = json.loads(line.split("Stats:")[1].strip())
+                            leaves = stats_json.get("leaves")
+                            nodes = stats_json.get("nodes")
+                        except Exception:
+                            pass
+                    elif "Leaves:" in line:
                         leaves = int(line.split("Leaves:")[1].strip())
                     elif "Nodes:" in line:
                         nodes = int(line.split("Nodes:")[1].strip())
