@@ -120,7 +120,7 @@ uv run main.py [OPTIONS]
 *   `--impls IMPLS`: Comma-separated implementations: `GCC14`, `GCC16`, `GCC7`, `LLVM15`, `LLVM19`, `DT` (default: `DT`).
 *   `--types TYPES`: Comma-separated data types: `IntNaked`, `MultiKey`, `WideRow`, `LongPrefix`, `RevDomain`, `CaseInsens` (default: `IntNaked,WideRow`).
 *   `--sizes SIZES`: Override large N timing ranges in `count:min:max` spacing format (default: `100:20:2000000`).
-*   `--inputs INPUTS`: Comma-separated distributions: `random`, `reversed`, `sorted` (default: `random,reversed`).
+*   `--inputs INPUTS`: Comma-separated distributions: `random`, `reversed`, `sorted` (default: `random,reversed,sorted`).
 *   `--adaptivity ADAPTIVITY`: Comma-separated variants: `entropy`, `adaptive` (default: `adaptive`).
 *   `--dry-run`: Estimate and display total suite runtime without executing actual benchmarks.
 

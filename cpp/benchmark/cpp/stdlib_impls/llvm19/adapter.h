@@ -10,7 +10,7 @@
 #include <cstring> 
 
 // Include dtsort infrastructure
-#include "dt_dispatch.h"
+#include "dt_dispatch.hh"
 
 #define _LLVM19_BEGIN_NAMESPACE_STD namespace target_std {
 #define _LLVM19_END_NAMESPACE_STD }

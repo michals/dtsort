@@ -161,7 +161,7 @@ class RunConfig:
     sizes_explicit: bool = False
     only_counts: bool = False
     stages: list[BenchmarkStage] = field(default_factory=list)
-    inputs: str = "random,reversed"
+    inputs: str = "random,reversed,sorted"
     adaptivity: str = "adaptive"
     dry_run: bool = False
 
@@ -220,7 +220,7 @@ def parse_cli_args(args_list: list[str] | None = None) -> RunConfig:
     parser.add_argument(
         "--inputs",
         type=str,
-        default="random,reversed",
+        default="random,reversed,sorted",
         help="Comma-separated input distributions. Supported: random, reversed, sorted",
     )
     parser.add_argument(

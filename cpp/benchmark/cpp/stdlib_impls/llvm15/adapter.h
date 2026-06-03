@@ -10,7 +10,7 @@
 #include <cstring> 
 
 // Include dtsort infrastructure
-#include "dt_dispatch.h"
+#include "dt_dispatch.hh"
 
 // LLVM 15 Macros (Renamed to avoid conflict)
 #define _LLVM15_BEGIN_NAMESPACE_STD namespace target_std {

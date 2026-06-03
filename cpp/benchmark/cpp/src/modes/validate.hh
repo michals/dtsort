@@ -3,10 +3,10 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "cli.h"
-#include "bench_common.h"
-#include "validation_logic.h"
-#include "shim_algorithm.h"
+#include "cli.hh"
+#include "bench_common.hh"
+#include "validation_logic.hh"
+#include "shim_algorithm.hh"
 
 /**
  * @brief Stage: Validation

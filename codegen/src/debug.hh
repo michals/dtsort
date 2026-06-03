@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 #ifdef NDEBUG
 #define Debug(x)
@@ -6,4 +7,4 @@
 #else
 #define Debug(x) std::cerr << x
 #define Debugn(x) std::cerr << x << "\n"
-#endif 
+#endif

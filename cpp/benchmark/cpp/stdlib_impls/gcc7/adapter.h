@@ -14,7 +14,7 @@
 // Generated dtsort headers
 
 // Import dtsort dispatch
-#include "dt_dispatch.h"
+#include "dt_dispatch.hh"
 
 // Avoid macro redefinitions for GCC 7
 #ifdef __cpp_lib_clamp

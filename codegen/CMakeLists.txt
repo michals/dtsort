@@ -22,6 +22,7 @@ target_include_directories(dtsort-codegen PRIVATE
 # Verification executable (tests and stats)
 add_executable(dtsort-verify src/test_main.cc)
 target_compile_definitions(dtsort-verify PRIVATE DT_ADAPTIVE=1)
+target_link_libraries(dtsort-verify PRIVATE dt_stable_sort)
 target_include_directories(dtsort-verify PRIVATE 
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -30,6 +31,7 @@ target_include_directories(dtsort-verify PRIVATE
 # Verification executable for High Entropy Mode (DT_ADAPTIVE=0)
 add_executable(dtsort-verify-em src/test_main.cc)
 target_compile_definitions(dtsort-verify-em PRIVATE DT_ADAPTIVE=0)
+target_link_libraries(dtsort-verify-em PRIVATE dt_stable_sort)
 target_include_directories(dtsort-verify-em PRIVATE 
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -38,6 +40,7 @@ target_include_directories(dtsort-verify-em PRIVATE
 # Verification executable for Adaptive Mode (DT_ADAPTIVE=1)
 add_executable(dtsort-verify-am src/test_main.cc)
 target_compile_definitions(dtsort-verify-am PRIVATE DT_ADAPTIVE=1)
+target_link_libraries(dtsort-verify-am PRIVATE dt_stable_sort)
 target_include_directories(dtsort-verify-am PRIVATE 
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}

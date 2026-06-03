@@ -14,7 +14,7 @@
 // Generated dtsort headers
 
 // Import dtsort dispatch
-#include "dt_dispatch.h"
+#include "dt_dispatch.hh"
 
 // GCC 16 Macros (stubs)
 #define _GLIBCXX_HOSTED 1

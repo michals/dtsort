@@ -1,4 +1,5 @@
 #pragma once
+
 // Stats: {"leaves":120,"nodes":239,"maxDepth":7,"minDepth":6,"avgPath":6.93333,"sortedPath":7,"reversePath":7,"fullness":93.75}
 
 #include "dtsort_common.hh"
@@ -10,7 +11,7 @@
 
 template<typename RandomAccessIterator, typename Compare>
 DT_ALWAYS_INLINE
-inline DT_RETURN_TYPE dtsort5(const RandomAccessIterator& first, const RandomAccessIterator& last, const Compare& compare) {
+inline DT_RETURN_TYPE dtsort5(const RandomAccessIterator& first, [[maybe_unused]] const RandomAccessIterator& last, const Compare& compare) {
 assert(last-first==5);
 auto &a = *(first+0);
 auto &b = *(first+1);

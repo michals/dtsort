@@ -2,6 +2,13 @@
 #include <utility>
 #include <cassert>
 
+#if defined(__GNUC__) || defined(__clang__)
+#pragma GCC diagnostic ignored "-Wunused-label"
+#elif defined(_MSC_VER)
+#pragma warning(disable: 4102)
+#endif
+
+
 // Used by dtsortX.hh files.
 // Provides ways to swap elements
 // or to cycle (right shift by one element) them.
