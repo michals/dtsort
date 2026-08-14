@@ -26,7 +26,7 @@ It works by replacing the insertion-sort leaf cases in hybrid sorting algorithms
 | **Pre-sorted** (adaptive mode)    | **up to 4.4×** faster        | Competitive          | [→ Explore](https://michals.github.io/dtsort/interactive_report.html#tab=curves&type=IntNaked&pattern=sorted&metric=speedup&minN=25&maxN=2000000&tpType=IntNaked&chart=dt) |
 
 > _Measured on Apple M4 vs stock `std::stable_sort`. All gains are relative speedups._
-> _[Full results & methodology →](RESULTS.md) · [Interactive benchmark explorer →](https://michals.github.io/dtsort/interactive_report.html)_
+> _[Full results & methodology →](RESULTS.md) · [Interactive benchmark explorer →](https://michals.github.io/dtsort/interactive_report.html#tab=curves&type=WideRow&pattern=random&metric=speedup&minN=25&maxN=2000000&tpType=IntNaked&chart=dt)_
 
 ![Speedup curves for dt_stable_sort vs stock std::stable_sort across data types and input patterns](cpp/benchmark/results/reports/fig1_speedup_grid.svg)
 
